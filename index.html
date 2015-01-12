@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="vendor/kefir/dist/kefir.js"></script>
+    <script src="vendor/angular/angular.js"></script>
+    <script src="app/main.js"></script>
+</head>
+<body ng-app="app">
+    <div ng-controller="MainController as m">
+        <h1>{{ intervalValue }}</h1>
+        <button ng-click="dec()">-1</button>
+        <span id="value">{{ value }}</span>
+        <button ng-click="inc()">+1</button>
+        <input type="text" ng-model="message"/>
+        <span>Value 1 {{ text }}</span>
+        <span>Value 2 {{ text2 | uppercase }}</span>
+        <div>{{ letter }}</div>
+    </div>
+</body>
+</html>
